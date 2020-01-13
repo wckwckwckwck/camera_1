@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
@@ -13,31 +14,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="int_tohttp"
-        android:text="前往请求界面" />
+        android:text="前往请求界面"
+
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="intent_ToOkHttpUpload"
+        android:text="跳转到OkhttpUpload" />
+
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="跳转"
         android:onClick="int_1"
-        />
+        android:text="调用接口一（手机可用）" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="跳转2"
         android:onClick="int_2"
-        />
+        android:text="摄像头调用接口2（虚拟机可用）" />
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="but_3"
-        android:text="跳转3" />
+        android:onClick="intent_toUploadMain"
+        android:text="跳转到UploadMain" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ong"
-        android:onClick="but_3"
-        />
 </LinearLayout>

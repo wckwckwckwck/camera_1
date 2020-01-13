@@ -3,10 +3,10 @@ package com.example.camera_1;
 import android.app.Activity;
 import android.os.Handler;
 import android.os.Message;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -22,8 +22,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class OKHttp_test extends Activity {
-
+public class OkHttpUpload extends Activity {
     private OkHttpClient client = new OkHttpClient();//创建okHttpClient对象
     private TextView tvResult;
 
@@ -37,15 +36,14 @@ public class OKHttp_test extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_okhttp_test);
+        setContentView(R.layout.activity_ok_http_upload);
 
         tvResult= (TextView) findViewById(R.id.tv_result);;
         findViewById(R.id.btn_get).setOnClickListener(onClickListener);
-    findViewById(R.id.btn_post).setOnClickListener(onClickListener);
-    findViewById(R.id.btn_upload_file).setOnClickListener(onClickListener);
-}
+        findViewById(R.id.btn_post).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_upload_file).setOnClickListener(onClickListener);
+    }
 
     private View.OnClickListener onClickListener=new View.OnClickListener() {
         @Override

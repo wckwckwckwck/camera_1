@@ -17,6 +17,8 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
 
+import uploadPhoto.UploadMain;
+
 
 public class MainActivity extends Activity {
 
@@ -44,6 +46,19 @@ public class MainActivity extends Activity {
         startActivity(intent);
 
 
+    }
+
+    public void intent_ToOkHttpUpload(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,OkHttpUpload.class);
+        startActivity(intent);
+
+    }
+
+    public void intent_toUploadMain(View view){
+        Intent intent=new Intent();
+        intent.setClass(MainActivity.this, UploadMain.class);
+        startActivity(intent);
     }
 
 
